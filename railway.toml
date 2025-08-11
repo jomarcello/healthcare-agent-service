@@ -3,8 +3,10 @@
   buildCommand = "npm install"
 
 [deploy]
-  startCommand = "node autonomous-agent-typescript-mcp.js"
+  startCommand = "node index.js"
   restartPolicyType = "on-failure"
+  healthcheckPath = "/health"
+  healthcheckTimeout = 30
 
 [env]
   NODE_ENV = "production"

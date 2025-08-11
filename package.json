@@ -2,21 +2,15 @@
   "name": "healthcare-agent-service",
   "version": "1.0.0",
   "description": "Autonomous Healthcare Agent with full MCP integrations",
-  "main": "autonomous-agent-typescript-mcp.js",
-  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "start": "node autonomous-agent-typescript-mcp.js",
-    "dev": "node autonomous-agent-typescript-mcp.js",
+    "start": "node index.js",
+    "dev": "node index.js",
     "health": "curl http://localhost:${PORT:-3001}/health"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0",
-    "@smithery/sdk": "^1.0.0",
-    "@elevenlabs/elevenlabs-js": "^1.0.0",
     "express": "^4.18.2",
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "chalk": "^5.3.0",
     "axios": "^1.6.2"
   },
   "engines": {
