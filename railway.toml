@@ -1,0 +1,10 @@
+[build]
+  builder = "nixpacks"
+  buildCommand = "npm install"
+
+[deploy]
+  startCommand = "node autonomous-agent-typescript-mcp.js"
+  restartPolicyType = "on-failure"
+
+[env]
+  NODE_ENV = "production"
